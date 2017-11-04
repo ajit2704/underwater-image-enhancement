@@ -10,7 +10,7 @@ import math
 
 import cv2
 
-from untitled5 import simplest_cb
+from simplestColorBalance import simplest_cb
 from saliencyDetection import saliencyDetection
 
 import math

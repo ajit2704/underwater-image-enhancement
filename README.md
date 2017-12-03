@@ -48,7 +48,8 @@ The flow of process goes like this:
      
         res=cv2.merge((b,g,r))
         res1=cv2.merge((b1,g1,r1))
-     
+    
+   ![all text](https://github.com/ajit2704/im_enh/blob/master/con_screenshot_04.12.2017.png)
      
     
    5] Averaging two images, here we can use diffetent methods of averaging images, but the simplest for two images is weighted addition:

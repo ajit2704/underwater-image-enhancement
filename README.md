@@ -1,4 +1,4 @@
-# im_enh
+# Image Enhancement
 # Introduction
 Visibility in underwater images is usually poor because of the attenuation of light in the water that causes low contrast and color variation. In this , a new approach for underwater image quality improvement is presented,based on [this paper](https://www.sciencedirect.com/science/article/pii/S2092678216302588/pdfft?md5=0fb801ccd8c3b98979cb631428a2c3e9&pid=1-s2.0-S2092678216302588-main.pdf). The proposed method aims to improve underwater image contrast, increase image details, and reduce noise by applying a new method of using contrast stretching to produce two different images with different contrasts.
 

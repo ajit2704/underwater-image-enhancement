@@ -3,7 +3,7 @@
 Visibility in underwater images is usually poor because of the attenuation of light in the water that causes low contrast and color variation. In this , a new approach for underwater image quality improvement is presented,based on [this paper](https://www.sciencedirect.com/science/article/pii/S2092678216302588/pdfft?md5=0fb801ccd8c3b98979cb631428a2c3e9&pid=1-s2.0-S2092678216302588-main.pdf). The proposed method aims to improve underwater image contrast, increase image details, and reduce noise by applying a new method of using contrast stretching to produce two different images with different contrasts.
 
 # Mehodology
-Here we are dividing a image from its average pixel value to highest & lowest respectively. Calling it as high contrast & low contrast respectively.Followed by this a Rayleigh stretching of each pixel over its entire range. We get two images till now, we use their extremities to get an average image with averaging the noises.
+Here we are dividing a image from its average pixel value to highest & lowest respectively. Calling it as high contrast & low contrast respectively.Followed by this Rayleigh stretching of each pixel over its entire range. We get two images till now, we use their extremities to get an average image with averaging the noises.
 The flow of process goes like this:
 
 ![Dummy Model Results](https://ars.els-cdn.com/content/image/1-s2.0-S2092678216302588-gr2.jpg)
@@ -21,7 +21,8 @@ The flow of process goes like this:
   ```
 
 2] Finding average pixel
-    First we split down the image in its respective b,g,r channel. We need to find average pixel for each channel.
+    
+  First we split down the image in its respective b,g,r channel. We need to find average pixel for each channel.
   
   ```python
      imdb = ((b2.max()-b2.min())/2) + b2.min()
@@ -56,7 +57,7 @@ The flow of process goes like this:
         
         res2= cv2.addWeighted(res,.5,res1,.5,0)
 
-   6] Final stage is gto is increasing the contrst of the image, there are no. of ways from which we can do this, like stretching s & v component image over entire range, gamma correction, histogram equalization.We need to maintain image for segmentation so we are omitting histogram stretching, instead we uses gamma correction:
+   6] Final stage is to increse the contrast of the image, there are no. of ways from which we can do this, like stretching s & v component image over entire range, gamma correction, histogram equalization.We need to maintain image for segmentation so we are omitting histogram stretching, instead we uses gamma correction:
         
      
         def adjust_gamma(image, gamma=1.0):

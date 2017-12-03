@@ -11,7 +11,7 @@ The flow of process goes like this:
 **Input Image
 
 
-![Dummy Model Results](https://drive.google.com/drive/folders/1hxqK9XAFVIKL1HHakGyqYxfPqKGn0sKA)
+![](https://github.com/ajit2704/im_enh/blob/master/ori.png)
 
 
 1] Color channel decomposition
@@ -48,6 +48,7 @@ The flow of process goes like this:
      
         res=cv2.merge((b,g,r))
         res1=cv2.merge((b1,g1,r1))
+     
      
     
    5] Averaging two images, here we can use diffetent methods of averaging images, but the simplest for two images is weighted addition:

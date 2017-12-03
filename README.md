@@ -66,6 +66,6 @@ The flow of process goes like this:
             return cv2.LUT(image, table)
        
      
-               
+  ![all text](https://github.com/ajit2704/im_enh/blob/master/avg.png)        
                     
                                  

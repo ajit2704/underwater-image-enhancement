@@ -8,7 +8,7 @@ The flow of process goes like this:
 
 ![Dummy Model Results](https://ars.els-cdn.com/content/image/1-s2.0-S2092678216302588-gr2.jpg)
 
-**Input Image
+# Input Image
 
 
 ![](https://github.com/ajit2704/im_enh/blob/master/ori.png)

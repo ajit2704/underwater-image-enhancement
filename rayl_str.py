@@ -10,7 +10,7 @@ import sys
 import os
 import numpy as np
 import cv2
-from untitled1 import adjust_gamma
+from adjust_gamma import adjust_gamma
 """def split(arr, cond):
   return [arr[cond], arr[~cond]]
 def ireduce(image):
